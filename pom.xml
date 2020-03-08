@@ -83,6 +83,15 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<distributionManagement>
+		           <repository>
+                              <snapshotRepository>
+                                <id>nexus-snapshots</id>
+                                <url>http://your-host:8081/repository/maven-snapshots/</url>
+                               </snapshotRepository>
+                           <repository>
+</distributionManagement>
+
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
